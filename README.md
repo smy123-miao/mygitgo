@@ -31,20 +31,21 @@ Suppose we now have a dataset with N nodes in the data, each node has its own ch
 
 #### model details
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="900" height="400" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="800" height="260" alt="hh"/>
 
 ## Experiment and Results
 ### Dataset download and loading
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_download.png" width="700" height="200" alt="hh"/>
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_load.png" width="663" height="30" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_download.png" width="350" height="150" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_load.png" width="331" height="15" alt="hh"/>
 
 ### Data training
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train1.png" width="316" height="663" alt="hh"/> <img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train2.png" width="700" height="200" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train1.png" width="160" height="331" alt="hh"/> 
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train2.png" width="100" height="331" alt="hh"/>
 
 ### Accuracy result
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/accuracy.png" width="429" height="106" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/accuracy.png" width="220" height="50" alt="hh"/>
 ## Conclusion
 Through this project, I have a deeper understanding of link prediction. It is my first time to learn about the GCN network model. The two-layer GCN network model has a relatively good performance for the Cora dataset, but it is not good for the Facebook-Page data, which is reflected in the training process.When the number of training epoches  exceed fifty, Loss does not continue to decrease, which indicates that the activation function or loss function in the network needs to be adjusted. But in summary, the experiment shows that link prediction via the GCN network is feasible.
 
