@@ -29,5 +29,4 @@ Suppose we now have a dataset with N nodes in the data, each node has its own ch
 A wave = A + I, I is the identity matrix, D wave is the degree matrix of A wave, H is the feature of each layer, and for the input layer, H is Xσ is a nonlinear activation function.
 
 ![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG)
-
-Z=f(X,A)=softmax(A ̂ReLU(A ̂XW^((0)))W^((1)))
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG" width="200" height="40" alt="hh"/>
