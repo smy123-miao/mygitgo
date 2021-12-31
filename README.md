@@ -54,4 +54,5 @@ Through this project, I have a deeper understanding of link prediction. It is my
 
 ## Bibliography
 [1] Semi-Supervised Classification with Graph Convolutional Networks.Thomas N.Kipf, Max Welling.ICLR 2017 conference. 
+
 [2] PyTorch Geometric Documentation.https://pytorch-geometric.readthedocs.io/en/latest/
