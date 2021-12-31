@@ -12,6 +12,16 @@ Suppose we now have a dataset with N nodes in the data, each node has its own ch
 ![Image text](https://raw.githubusercontent.com/smy123-miao/mygitgo/master/img/GCNgongshi.png)
 
 A wave = A + I, I is the identity matrix, D wave is the degree matrix of A wave, H is the feature of each layer, and for the input layer, H is Xσ is a nonlinear activation function.
+
 ![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG)
+
+### Using Pytorch_Geometric(PyG)
+PyG (PyTorch Geometric) is a library built upon PyTorch to easily write and train Graph Neural Networks (GNNs) for a wide range of applications related to structured data.
+It consists of various methods for deep learning on graphs and other irregular structures, also known as geometric deep learning, from a variety of published papers. In addition, it consists of easy-to-use mini-batch loaders for operating on many small and single giant graphs, multi GPU-support, distributed graph learning via Quiver, a large number of common benchmark datasets. After downloading the package, you can use the dataset in it, which contains the Facebook dataset.The network model is encapsulated and can be used arbitrarily.Websites for PyG:https://pytorch-geometric.readthedocs.io/en/latest.
+## Methodology
+### Problem(Definition)
+Social interaction between people constitutes a social network, through which we can discover the relationship between people. Facebook is a social platform. Taking people as a node, the characteristics that this person shows in social life, such as his hobbies, his school, his beliefs, etc., can be used as node features, and through features extraction we can find the connection between people, and this link is reflected in whether two people are friends or not. So link prediction on social platforms is to determine whether there may be a friendship relationship between two people.
+### Dataset
+This project uses the Facebook-page data included in PyG, and the reference data through TORCH_GEOMETRIC.DATASETS. It can be downloaded from the cloud to the local area, and the specific data content is as follows:
 
 
