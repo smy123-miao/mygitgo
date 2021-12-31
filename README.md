@@ -6,8 +6,10 @@ Link prediction is an important topic in social network analysis. The goal of li
 ### Knowledge preparation
 #### Learning about link prediction:
 for the method of link prediction, all the method assign a connection weight score(x,y) to pairs of nodes x,y, based on the input graph, and the produce a ranked list in decreasing order of score(x,y), which can be viewed as comuting a measure of proximity or "similarity" between nodes x and y.
-#### Learning about GNN:
+#### Learning about GCN:
 Graph convolutional neural networks are actually the same as convolutional neural networks (CNNs) as feature extractors, but the object of the GCN is graph data. GCN is very versatile, it designed a method to extract features from graph data, so that we can use these features to node classification of graph data (node classification), graph classification (link prediction), but also incidentally get the embedded representation of the graph (graph embedding).
+
+![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG)
 
 ### Using Pytorch_Geometric(PyG)
 PyG (PyTorch Geometric) is a library built upon PyTorch to easily write and train Graph Neural Networks (GNNs) for a wide range of applications related to structured data.
@@ -24,9 +26,8 @@ This project uses the Facebook-page data included in PyG, and the reference data
 #### Using GCVconv
 
 Suppose we now have a dataset with N nodes in the data, each node has its own characteristics, we set the characteristics of these nodes to form an N×D dimensional matrix X, and then the relationship between the nodes will also form an N× N-dimensional matrix A, also known as the adjacency matrix. X and A are the inputs to our model. Then the core formula of GCN is: 
-![Image text](https://raw.githubusercontent.com/smy123-miao/mygitgo/master/img/GCNgongshi.png)
 
 A wave = A + I, I is the identity matrix, D wave is the degree matrix of A wave, H is the feature of each layer, and for the input layer, H is Xσ is a nonlinear activation function.
 
-![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG)
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/GCNmoxing.JPG" width="200" height="40" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/GCNgongshi.png" width="400" height="200" alt="hh"/>
+
