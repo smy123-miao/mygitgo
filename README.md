@@ -25,9 +25,11 @@ This project uses the Facebook-page data included in PyG, and the reference data
 ### Algorithm
 #### Using GCVconv
 
-Suppose we now have a dataset with N nodes in the data, each node has its own characteristics, we set the characteristics of these nodes to form an N×D dimensional matrix X, and then the relationship between the nodes will also form an N× N-dimensional matrix A, also known as the adjacency matrix. X and A are the inputs to our model. Then the core formula of GCN is: 
+Suppose we now have a dataset with N nodes in the data, each node has its own characteristics, we set the characteristics of these nodes to form an N×D dimensional matrix X, and then the relationship between the nodes will also form an N× N-dimensional matrix A, also known as the adjacency matrix. X and A are the inputs to our model.The propagation between GCN layers is as follows:
 
-A wave = A + I, I is the identity matrix, D wave is the degree matrix of A wave, H is the feature of each layer, and for the input layer, H is Xσ is a nonlinear activation function.
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/formula-GCN.png" width="400" height="200" alt="hh"/>
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/GCNgongshi.png" width="400" height="200" alt="hh"/>
+#### model details
+
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="400" height="200" alt="hh"/>
 
