@@ -20,16 +20,32 @@ Social interaction between people constitutes a social network, through which we
 ### Dataset
 This project uses the Facebook-page data included in PyG, and the reference data through TORCH_GEOMETRIC.DATASETS. It can be downloaded from the cloud to the local area, and the specific data content is as follows:
 
-![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/datashow.png)
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/datashow.png" width="800" height="400" alt="hh"/>
 
 ### Algorithm
 #### Using GCVconv
 
 Suppose we now have a dataset with N nodes in the data, each node has its own characteristics, we set the characteristics of these nodes to form an N×D dimensional matrix X, and then the relationship between the nodes will also form an N× N-dimensional matrix A, also known as the adjacency matrix. X and A are the inputs to our model.The propagation between GCN layers is as follows:
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/formula-GCN.png" width="400" height="200" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/formula-GCN.png" width="600" height="200" alt="hh"/>
 
 #### model details
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="400" height="200" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="900" height="400" alt="hh"/>
+
+## Experiment and Results
+### Dataset download and loading
+
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_download.png" width="700" height="200" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/dataset_load.png" width="663" height="30" alt="hh"/>
+
+### Data training
+
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train1.png" width="316" height="663" alt="hh"/> <img src="https://github.com/smy123-miao/mygitgo/blob/master/img/train2.png" width="700" height="200" alt="hh"/>
+
+### Accuracy result
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/accuracy.png" width="429" height="106" alt="hh"/>
+## Conclusion
+Through this project, I have a deeper understanding of link prediction. It is my first time to learn about the GCN network model. The two-layer GCN network model has a relatively good performance for the Cora dataset, but it is not good for the Facebook-Page data, which is reflected in the training process.When the number of training epoches  exceed fifty, Loss does not continue to decrease, which indicates that the activation function or loss function in the network needs to be adjusted. But in summary, the experiment shows that link prediction via the GCN network is feasible.
+
 
