@@ -27,11 +27,11 @@ This project uses the Facebook-page data included in PyG, and the reference data
 
 Suppose we now have a dataset with N nodes in the data, each node has its own characteristics, we set the characteristics of these nodes to form an N×D dimensional matrix X, and then the relationship between the nodes will also form an N× N-dimensional matrix A, also known as the adjacency matrix. X and A are the inputs to our model.The propagation between GCN layers is as follows:
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/formula-GCN.png" width="600" height="200" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/formula-GCN.png" width="400" height="135" alt="hh"/>
 
 #### model details
 
-<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="800" height="260" alt="hh"/>
+<img src="https://github.com/smy123-miao/mygitgo/blob/master/img/model_pro.png" width="750" height="270" alt="hh"/>
 
 ## Experiment and Results
 ### Dataset download and loading
@@ -47,6 +47,8 @@ Suppose we now have a dataset with N nodes in the data, each node has its own ch
 
 ### Accuracy result
 <img src="https://github.com/smy123-miao/mygitgo/blob/master/img/accuracy.png" width="300" height="70" alt="hh"/>
+
+
 ## Conclusion
 Through this project, I have a deeper understanding of link prediction. It is my first time to learn about the GCN network model. The two-layer GCN network model has a relatively good performance for the Cora dataset, but it is not good for the Facebook-Page data, which is reflected in the training process.When the number of training epoches  exceed fifty, Loss does not continue to decrease, which indicates that the activation function or loss function in the network needs to be adjusted. But in summary, the experiment shows that link prediction via the GCN network is feasible.
 
