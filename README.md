@@ -24,4 +24,5 @@ Social interaction between people constitutes a social network, through which we
 ### Dataset
 This project uses the Facebook-page data included in PyG, and the reference data through TORCH_GEOMETRIC.DATASETS. It can be downloaded from the cloud to the local area, and the specific data content is as follows:
 
+![Image text](https://github.com/smy123-miao/mygitgo/blob/master/img/datashow.png)
 
